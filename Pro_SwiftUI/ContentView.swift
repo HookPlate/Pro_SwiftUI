@@ -15,9 +15,14 @@ struct ContentView: View {
 //        Text("Hello World lets see if this is actually the case yes it is I can see")
 //            .fixedSize(horizontal: true, vertical: false)
 //            .frame(width: 30, height: 100)
-        Text("Hello World lets see if this is actually the case yes it is I can see it is interesting ")
-            .fixedSize(horizontal: false, vertical: true)
-            .frame(width: 70, height: 100)
+//        Text("Hello World lets see if this is actually the case yes it is I can see it is interesting ")
+//            .fixedSize(horizontal: false, vertical: true)
+//            .frame(width: 70, height: 100)
+        Image("times-tables-1-to-12")
+            .resizable()
+            .fixedSize()
+            .frame(width: 300, height: 300)
+            //.clipped()
     }
 }
 
