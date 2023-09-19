@@ -19,14 +19,14 @@ struct ContentView: View {
         HStack {
             Text("Forecast")
                 .padding()
-            //comment out the below
-                .frame(maxHeight: 100)
+                .frame(maxHeight: .infinity)
                 .background(.yellow)
             Text("The rain in Spain falls mainly on the Spaniards")
                 .padding()
-                .frame(maxHeight: 100)
+                .frame(maxHeight: .infinity)
                 .background(.cyan)
         }
+        .fixedSize(horizontal: false, vertical: true)
     }
 }
 
