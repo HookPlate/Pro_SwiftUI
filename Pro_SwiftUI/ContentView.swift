@@ -9,15 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Text("Hello")
+//            .modifier(CustomFont())
+//            .onTapGesture {
+//                print(type(of: self.body))
+//            }
+            .frame(width: 300, height: 100, alignment: .bottomTrailing)
     }
 }
+
+struct CustomFont: ViewModifier {
+    func body(content: Content) -> some View {
+        content.font(.largeTitle)
+    }
+}
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
